@@ -1,0 +1,110 @@
+.mainStickyContent {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: fixed;
+
+	z-index: 2;
+}
+
+.headerContentsHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	box-shadow:  0 0 4px #000;
+}
+
+
+.headerContents {
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 0px;	
+	height: 40px;
+}
+
+.leftHeaderDetails {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	padding: 9px 15px;	
+}
+
+.rightHeaderDetails {
+	width: auto;
+	float: right;
+	overflow: hidden;
+}
+
+.logoHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.logo {
+	width: 100%;
+	font-size: 18px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+.searchAndProfilesHolder {
+	width: auto;
+	float: right;
+	overflow: hidden;
+	margin: 0px;
+}
+
+.searchHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	padding: 9px 15px;
+	border-right: solid 2px #000;	
+}
+
+.profileHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	padding: 1px 15px 0 0;	
+}
+
+.photoThumb {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	margin: 0 15px;
+}
+
+.nameHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+.nameDetails {
+	color: #FFF;
+	font-size: 16px;
+}
+
+.lockControlHolder {
+	background-color: #000;
+}
+
+.searchInput {
+	width: 0px;
+	float: left;
+	overflow: hidden;
+	margin: 0 0px 0 10px;
+	padding: 1px;
+	background-color: #000;
+	border-color: #000;
+	color: #FFF;
+	display: none;
+}

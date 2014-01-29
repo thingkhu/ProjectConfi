@@ -1,0 +1,190 @@
+@import url('fonts.css') all;
+@import url('mainStickyContent.css') all;
+@import url('leftSideBar.css') all;
+@import url('mainContentsContainer.css') all;
+@import url('icons.css') all;
+
+* {
+	line-height: normal;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+
+p,h1,h2,h3,h4,h5,h6,li,a,span,div {
+	font-family: 'Source Code Pro', sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+div,li,header,nav,section,footer,summary,aside,span {
+	float: left;
+	overflow: visible;
+	letter-spacing: normal;
+	list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+	line-height: 1.428571429;
+	background: url(../images/bg-blur-1.jpg) no-repeat center center fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;		
+}
+
+.mainContainer {
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	float: left;
+	background-color: transparent;
+	position: relative;
+	height: 100%;
+}
+
+.brownTransParentBg {
+	width: 170px;
+	height: 100%;
+	background-color: #C7B299;
+	z-index: 0;
+	opacity:0.6;
+	filter:Alpha(opacity=60);	
+}
+
+.listTransParentBg {
+	width: 170px;
+	height: 39px;
+	background-color: transparent;
+	z-index: 0;
+	opacity:0.25;
+	filter:Alpha(opacity=25);	
+	border-bottom: solid 1px #000;
+	margin: 0 0px 0 -5px;
+/*	border-left: solid 10px #7ac943;*/
+}
+
+.fileSortingTransparentBg {
+	width: 100%;
+	height: 35px;
+	background-color: rgb(83,71,65);
+	z-index: 0;
+	opacity:0.25;
+	filter:Alpha(opacity=25);	
+}
+
+.fileSortingTransparentBg2 {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(83,71,65);
+	z-index: 0;
+	opacity:0.50;
+	filter:Alpha(opacity=50);	
+}
+
+.mainListTransParentBg {
+	width: 100%;
+	height: 37px;
+	background-color: rgb(255,255,255);
+	z-index: 0;
+	opacity:0.5;
+	filter:Alpha(opacity=50);	
+	border-bottom: solid 1px #999;	
+}
+
+.mainListTransParentBg2 {
+	width: 100%;
+	height: 577px;
+	background-color: rgb(255,255,255);
+	z-index: 0;
+	opacity:0.5;
+	filter:Alpha(opacity=50);	
+}
+
+
+.listSettingsTransParentBg {
+	width: 170px;
+	height: 39px;
+	background-color: transparent;
+	z-index: 0;
+	opacity:0.25;
+	filter:Alpha(opacity=25);	
+	margin: 0 0px 0 -5px;
+}
+
+
+.blackTransParentBg {
+	width: 100%;
+	height: 40px;
+	background-color: #000;
+	z-index: 0;
+	opacity:0.6;
+	filter:Alpha(opacity=60);	
+}
+
+
+.icon {
+	-webkit-text-stroke: 0.Xpx;
+	text-shadow: #fff 0px 1px 1px;
+	cursor: pointer;
+}
+
+.iconHeader {
+	-webkit-text-stroke: 0.Xpx;
+	text-shadow: #fff 0px 1px 1px;
+}
+
+.lockScreenTransparentBg {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	background-color: #000;
+	z-index: 200;
+	opacity:0.8;
+	filter:Alpha(opacity=80);		
+}
+
+.lockScreenHolder {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+	top:0px;
+	z-index: 200;
+	display: none;
+}
+
+.lockScreenControlsHolder {
+	position: fixed;
+	top:0px;
+	height: 100%;
+	width: 100%;
+}
+
+.lockScreenControl {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.lockScreenControl > div {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.lockScreenControl > div {
+	text-align: center;
+	color: #FFF;
+	font-size: 30px;
+	padding: 250px 0;
+	cursor: pointer;
+}

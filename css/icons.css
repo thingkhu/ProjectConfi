@@ -1,0 +1,88 @@
+.homeIcon {
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+}
+
+.lockIcon {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	padding: 9px 12px;
+}
+
+.searchIcon {
+	width: auto;
+	color:#FFF;
+	font-size: 18px;
+}
+
+.filesIcon {
+	padding: 0 7px 0 10px; 
+	font-size: 20px;
+}
+
+.filesLabelIcon,
+.questionIcon {
+	padding: 0 10px 0 10px; 
+	font-size: 25px;
+}
+
+.foldersIcon {
+	padding: 0 5px 0 10px; 
+	font-size: 20px;
+}
+
+.docsIcon,
+.imgsIcon,
+.othersIcon,
+.multiIcon {
+	padding: 0 5px 0px; 
+	font-size: 18px;
+}
+
+.indexIcon,
+.settingsIcon {
+	padding: 0 13px 0 10px; 
+	font-size: 20px;
+
+}
+
+.tagsIcon,
+.trashIcon {
+	padding: 0 10px 0 10px; 
+	font-size: 20px;
+}
+
+.breadcrumbsIcon {
+	color: #7ac943;
+}
+
+.infoIcon,
+.downloadIcon,
+.signoutIcon,
+.copyIcon,
+.timeIcon,
+.fontIcon,
+.tagIcon,
+.lockIcon,
+.trashIcon,
+.optionIcons {
+	cursor: pointer;
+}
+
+.uncheckIcon,
+.checkIcon {
+	cursor: pointer;
+}
+
+.uncheckIcon {
+	color:#999;
+}
+
+.checkIcon {
+	color: #FFF;
+}

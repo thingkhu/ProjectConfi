@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,height=device-height,target-densitydpi=device-dpi,user-scalable=yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<title>List View - File Management System</title>
+	<link rel="stylesheet" media="all" href="css/jquery-ui.custom.min.css"/>
+	<link rel="stylesheet" href="js/font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" media="all" href="css/common.css"/>	
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.custom.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+<body>
+
+	<div class="mainContainer">
+
+		<section class="mainStickyContent">
+
+			<header class="headerContentsHolder">
+
+				<div class="blackTransParentBg"></div>
+
+				<div class="headerContents">
+
+					<div class="leftHeaderDetails">
+
+						<span class="logo">
+
+							<img src="images/icons/logo-dummy.png">
+
+						</span>
+
+					</div>
+
+					<div class="rightHeaderDetails">
+
+						<div class="searchAndProfilesHolder">
+
+							<div class="searchHolder">
+
+								<div class="searchIcon icon">
+
+									<i class="fa fa-search"></i>
+
+								</div>
+								<div class="searchBoxHolder">
+
+									<input type="text" class="searchInput"> 
+
+								</div>
+
+							</div>
+
+							<div class="profileHolder">
+
+								<div class="photoThumb">
+
+									<img src="images/icons/photo-thumb.png" />
+
+								</div>
+								<div class="nameHolder">
+
+									<span class="nameDetails">
+
+										Jason Azerbaijan
+
+									</span>
+
+								</div>
+
+							</div>
+
+							<div class="lockControlHolder">
+
+								<div class="lockIcon icon">
+
+									<i class="fa fa-power-off"></i>
+
+								</div>
+
+							</div>
+
+						</div>						
+
+					</div>
+				
+				</div>
+
+			</header>	
+
+			<section class="mainContentsContainer">
+
+				<div class="labelHeaderHolder">
+
+					<ul class="labelHeader">
+
+						<li class="activePageLabel">
+
+							<i class="filesLabelIcon fa fa-list-alt icons"></i>My Data
+						
+						</li>
+
+						<li class="questionHolder">
+
+							<i class="questionIcon fa fa-question-circle icons"></i>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="mainContentsHolder">
+
+					<div class="listHeadersHolder">
+
+						<div class="listMainHeaderHolder">
+
+							<ul class="listMainHeader">
+
+								<li class="allHolder activeHeaderList">
+
+									<div class="listHeaderMenu">
+
+										All
+
+									</div>
+									<div class="activeListHeaderHolder">
+
+										<div class="activeListHeader"></div>
+
+									</div>
+
+								</li>
+
+								<li class="docsHolder">
+
+									<div class="listHeaderMenu">
+
+										<i class="docsIcon fa fa-file-o"></i> Documents
+
+									</div>
+									<div class="activeListHeaderHolder">
+
+										<div class="activeListHeader"></div>
+
+									</div>
+
+								</li>
+
+								<li class="imgsHolder">
+
+									<div class="listHeaderMenu">
+
+										<i class="imgsIcon fa fa-picture-o"></i> Images
+
+									</div>
+									<div class="activeListHeaderHolder">
+
+										<div class="activeListHeader"></div>
+
+									</div>
+
+								</li>	
+
+								<li class="othersHolder">
+
+									<div class="listHeaderMenu">
+
+										<i class="othersIcon fa fa-video-camera"></i> Others
+
+									</div>
+									<div class="activeListHeaderHolder">
+
+										<div class="activeListHeader"></div>
+
+									</div>
+
+								</li>	
+
+								<li>
+
+									<div class="listHeaderMenu">
+
+										<i class="multiIcon fa fa-asterisk"></i>
+
+									</div>
+
+								</li>																										
+
+							</ul>
+
+						</div>
+
+						<div class="sortingHeaders">
+
+								<div class="fileSortingTransparentBg"></div>
+
+								<div class="fileSortingHeadersHolder">
+
+									<ul class="fileSortingHeader">
+
+										<li class="filenameHolder">
+
+											<div class="sortingComponents">
+
+												<span class="sortingArrowHolder">
+
+													<span class="upArrowSorting"></span>
+													<span class="downArrowSorting"></span>
+
+												</span>
+												<span class="sortingLabel">
+
+													File Name
+
+												</span>
+
+											</div>
+
+										</li>
+										<li class="dateHolder">
+
+											<div class="sortingComponents">
+
+												<span class="sortingArrowHolder">
+
+													<span class="upArrowSorting"></span>
+													<span class="downArrowSorting"></span>
+
+												</span>
+												<span class="sortingLabel">
+
+													Date Modified
+
+												</span>
+
+											</div>
+
+										</li>									
+										<li class="filesizeHolder">
+
+											<div class="sortingComponents">
+
+												<span class="sortingArrowHolder">
+
+													<span class="upArrowSorting"></span>
+													<span class="downArrowSorting"></span>
+
+												</span>
+												<span class="sortingLabel">
+
+													Size
+
+												</span>
+
+											</div>
+
+										</li>	
+										<li class="kindHolder">
+
+											<div class="sortingComponents">
+
+												<span class="sortingArrowHolder">
+
+													<span class="upArrowSorting"></span>
+													<span class="downArrowSorting"></span>
+
+												</span>
+												<span class="sortingLabel">
+
+													Kind
+
+												</span>
+
+											</div>
+
+										</li>																	
+
+									</ul>
+
+								</div>
+
+						</div>					
+
+					</div>
+
+					<div class="listContentDetailsHolder">
+
+						<div class="listSortingHolder">
+
+							<div class="listDetails">
+
+								<div class="mainListTransParentBg2"></div>
+
+								<div class="scrollBarHolder">
+
+									<div class="scroll"></div>
+
+								</div>		
+
+								<ul class="listDetailsHolder">
+
+									
+
+									<li class="otherFiles">
+
+										<div class="listContentsHolder">
+
+											<div class="mainListContentsHolder">
+
+												<div class="filenameHolder">
+
+													<span class="checkBoxHolder">
+
+														<span class="boxHolder">
+
+															<i class="uncheckIcon fa fa-square-o"></i>
+
+														</span>
+
+														<span class="checkHolder">
+
+															<i class="checkIcon fa fa-check"></i>
+
+														</span>
+
+													</span>
+
+													<span class="fileLabel">
+
+														Azerbaijan National Anthem
+
+													</span>
+
+												</div>
+
+												<div class="dateHolder">
+
+													<span class="fileLabel">
+
+														23 November 2013
+
+													</span>
+
+												</div>
+
+												<div class="filesizeHolder">
+
+													<span class="fileLabel">
+
+														512 KB
+
+													</span>
+
+												</div>	
+
+												<div class="kindHolder">
+
+													<span class="fileLabel">
+
+														.TXT
+
+													</span>												
+
+												</div>										
+
+											</div>
+
+											<div class="listOptionsHolder"></div>
+
+										</div>
+
+									</li>																																																																																															
+								</ul>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="listFooterHolder">
+
+						<div class="fileSortingTransparentBg2"></div>
+
+						<div class="listFooterDetails">
+
+							<ul class="listViewsHolder">
+
+								<li class="largeView activeView">
+
+									<i class="fa fa-th-large"></i>
+
+								</li>
+
+								<li class="gridView">
+
+									<i class="fa fa-th"></i>
+
+								</li>
+
+								<li class="lisstView">
+
+									<i class="fa fa-align-justify"></i>
+
+								</li>
+							</ul>
+
+							<div class="numberofRowsLabel">
+
+								<span>1 of 12 selected</span>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>			
+
+		</section>
+
+		<nav class="leftSideBar">
+
+			<div class="leftSideBarContentsHolder">
+
+				<div class="brownTransParentBg"></div>
+
+				<div class="leftSideBarContents">
+
+					<ul class="leftSideMenus">
+
+						<li class="backTodashBoardHolder">
+
+							<div class="listTransParentBg"></div>
+
+							<div class="homeIcon icon listMenu">
+
+								<i class="fa fa-home"></i>
+
+							</div>
+
+						</li>
+
+						<li class="filesHolders activeMenu">
+
+							<div class="listTransParentBg"></div>
+
+							<div class="listMenu icon">
+
+									<i class="filesIcon fa fa-list-alt icon"></i> Files
+
+							</div>
+
+							<div class="activeListHolder">
+
+								<div class="activeList"></div>
+
+							</div>
+
+						</li>
+
+						<li class="foldersHolder">
+
+							<div class="listTransParentBg"></div>
+
+							<div class="listMenu icon">
+
+									<i class="foldersIcon fa fa-folder-open icon"></i> Folders
+
+							</div>
+
+							<div class="activeListHolder">
+
+								<div class="activeList"></div>
+
+							</div>
+
+						</li>
+
+						<li class="indexHolder">
+
+							<div class="listTransParentBg"></div>
+
+							<div class="listMenu icon">
+
+									<i class="indexIcon fa fa-bookmark icon"></i> Index
+
+							</div>
+
+							<div class="activeListHolder">
+
+								<div class="activeList"></div>
+
+							</div>
+
+						</li>		
+
+						<li class="tagsHolder">
+
+							<div class="listTransParentBg"></div>
+
+							<div class="listMenu icon">
+
+									<i class="tagsIcon fa fa-tag icon"></i> Tags
+
+							</div>
+
+							<div class="activeListHolder">
+
+								<div class="activeList"></div>
+
+							</div>
+
+						</li>	
+
+						<li class="trashHolder">
+
+							<div class="listTransParentBg"></div>
+
+							<div class="listMenu icon">
+
+									<i class="trashIcon fa fa-trash-o icon"></i> Trash
+
+							</div>
+
+							<div class="activeListHolder">
+
+								<div class="activeList"></div>
+
+							</div>
+
+						</li>
+
+						<li class="settingsHolder">
+
+							<div class="listSettingsTransParentBg"></div>
+
+							<div class="listMenu icon">
+
+									<i class="settingsIcon fa fa-gear icon"></i> Settings
+
+							</div>
+
+							<div class="activeListHolder">
+
+								<div class="activeList"></div>
+
+							</div>
+
+						</li>																												
+
+					</ul>
+
+				</div>
+			
+			</div>
+
+		</nav>
+
+		<section class="lockScreenHolder">
+
+			<div class="lockScreenTransparentBg"></div>
+			<div class="lockScreenControlsHolder">
+
+				<div class="lockScreenControl">
+
+					<div class="unlockScreen">
+
+						Continue
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="listOptionDetailsHolder">
+
+			<div class="listArrowHolder">
+
+				<span class="listArrowUp"></span>
+
+			</div>
+
+			<div class="listOptionsContent">
+
+				<div class="breadCrumbsHolder">
+
+					<span class="breadCrumbsIcon">
+
+						<i class="breadcrumbsIcon fa fa-arrow-right"></i>
+
+					</span>
+					
+					<span class="breadCrumbs">
+
+						Found in: Workspace > Personal > TV Series
+
+					</span>
+
+				</div>
+
+
+				<div class="optionsHolder">
+
+					<ul class="listOptionList">
+
+						<li>
+
+							<i class="optionIcons fa fa-info-circle"></i>
+
+						</li>
+						<li>
+
+							<i class="optionIcons fa fa-download"></i>
+
+						</li>		
+						<li>
+
+							<i class="optionIcons fa fa-sign-out"></i>
+
+						</li>	
+						<li>
+
+							<i class="optionIcons fa fa-files-o"></i>
+
+						</li>	
+						<li>
+
+							<i class="optionIcons fa fa-clock-o"></i>
+
+						</li>	
+						<li>
+
+							<i class="optionIcons fa fa-font"></i>
+
+						</li>		
+						<li>
+
+							<i class="optionIcons fa fa-tags"></i>
+
+						</li>	
+						<li>
+
+							<i class="optionIcons fa fa-lock"></i>
+
+						</li>		
+						<li>
+
+							<i class="optionIcons fa fa-trash-o"></i>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

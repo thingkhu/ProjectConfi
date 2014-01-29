@@ -1,0 +1,516 @@
+.mainContentsContainer {
+	width: 900px;
+	float: none;
+	overflow: hidden;
+	margin: 40px auto 10px;
+	background-color: transparent;
+	padding: 5px;
+}
+
+.labelHeaderHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.labelHeader {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.labelHeader > li {
+	display: inline-block;
+	overflow: hidden;
+	padding: 8px 0px 7px;
+}
+
+.activePageLabel {
+	float: left;
+	overflow: hidden;
+	width: auto;
+	font-size: 20px;
+	color: #FFF;
+}
+
+.questionHolder {
+	float: right;
+	overflow: hidden;
+	width: auto;
+	font-size: 20px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.mainContentsHolder {
+	width: 900px;
+	float: left;
+	overflow: hidden;
+	box-shadow:  0 0 4px #000;
+}
+
+.listHeadersHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.listHeadersHolder > div {
+	width: 100%;
+	float: left;
+}
+
+.listMainHeader {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.listMainHeader > li {
+	display: inline-block;
+	width: auto;
+	overflow: hidden;
+	padding: 12px 5px 2px;
+	font-size: 14px;
+	color: #808080;
+	cursor: pointer;
+	filter:Alpha(opacity=50);
+	-webkit-transition: 0.5s 0.10s;
+	-moz-transition:  0.5s 0.10s;
+    -o-transition: 0.5s 0.10s;
+    -ms-transition:  0.5s 0.10s;
+    transition:  0.5s 0.10s;	
+}
+
+.listHeaderMenu {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	font-weight: 700;	
+}
+
+.listMainHeader > li.activeHeaderList .activeListHeaderHolder {
+	visibility: visible;
+}
+
+.listMainHeader > li:hover {
+	color: #000;
+}
+
+.listMainHeader > li.activeHeaderList {
+	color: #000;
+}
+
+.listMainHeaderHolder {
+	background-color: #FFF;
+}
+
+.activeListHeaderHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.activeListHeader {
+	border-radius: 50%;
+	background-color: #7ac943;
+	height: 8px;
+	width: 8px;
+	float: none;
+	margin: 0px auto;
+}
+
+.listMainHeader > li:last-child {
+	float: right;
+	color: #7ac943;
+}
+
+.listSortingHolder {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+}
+
+.mainListSortingContents {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.sortingHeaders {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	border-bottom: solid 2px #FFF;
+}
+
+.fileSortingHeadersHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	top:0px;
+}
+
+.fileSortingHeader {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.fileSortingHeader > li {
+	display: inline-block;;
+	float: left;
+	overflow: hidden;
+	padding: 8px 0;
+}
+
+.sortingComponents {
+	width: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.sortingArrowHolder {
+	width: 12px;
+	float: left;
+	overflow: hidden;
+	margin: 0 5px 0 0;
+}
+
+.sortingLabel {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	/*color: rgb(128,128,128);*/
+	font-size: 14px;
+	font-weight: 700;
+	color: #404040;
+}
+
+.upArrowSorting {
+	float: left;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #404040;
+	margin: 2px 0;
+}
+
+.downArrowSorting {
+	float: left;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #404040;
+}
+
+.listDetails {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.listDetailsHolder {
+	width: 100%;
+	float: left;	
+	overflow: visible;
+	position: absolute;
+	top:0px;
+}
+
+.listDetailsHolder > li {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	overflow: visible;
+	border-bottom: solid 1px #999;
+}
+
+.listDetailsHolder > li.selectedList .mainListContentsHolder {
+	background-color: #7ac943;
+	z-index: 0;
+}
+
+.listDetailsHolder > li.selectedList .boxHolder {
+	display: block;
+}
+
+.listDetailsHolder > li.selectedList .checkHolder {
+	display: none;
+}
+
+.listDetailsHolder > li:hover .boxHolder {
+	display: none;
+}
+
+.listDetailsHolder > li:hover .checkHolder {
+	display: inline-block;
+}
+
+.listDetailsHolder > li.selectedList:hover .checkHolder i {
+	color: #FFF;
+}
+
+.listDetailsHolder > li:hover .checkHolder i {
+	color: #7ac943;
+}
+
+.listDetailsHolder > li.selectedList .listOptionDetailsHolder {
+	display: inline-block;	
+}
+
+.listDetailsHolder > li.selectedList .listOptionsContent {
+	/*box-shadow: 0px 0px 10px #000;*/
+}
+
+.listDetailsHolder > li.selectedList .listOptionsHolder {
+	/*box-shadow: 0px 0px 10px #000;*/
+	z-index: 2;
+}
+
+
+.listDetailsHolder > li.selectedList .mainListTransParentBg {
+	height: 77px;
+}
+
+.listDetailsHolder > li.selectedList .fileLabel {
+	color: #FFF;
+}
+
+.listContentsHolder {
+	width: 100%;
+	float: left;
+	overflow: visible;
+	position: relative;
+}
+
+.mainListContentsHolder {
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+.mainListContentsHolder > div {
+	float: left;
+	overflow: hidden;
+	padding: 7px 0;
+}
+
+.mainListContentsHolder > div > span {
+	float: left;
+	overflow: hidden;	
+}
+
+.fileLabel {
+	font-size: 13px;
+	color:#000;
+}
+
+.checkBoxHolder {
+	padding: 2px 0px 0 15px;
+	width: 25px;
+}
+
+.boxHolder,
+.checkHolder {
+	width: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+.checkHolder {
+	display: none;
+}
+
+.filenameHolder {
+	width: 435px;
+}
+
+.filenameHolder .sortingArrowHolder {
+	margin: 0 0 0 40px;
+}
+
+.dateHolder {
+	width: 215px;
+}
+
+.filesizeHolder {
+	width: 100px;
+}
+
+.kindHolder {
+	width: 100px;
+}
+
+.listOptionsHolder {
+	width: 100%;
+	float: left;
+	overflow: visible;
+	height: 38px;
+	position: absolute;
+	top:25px;
+	background-color: transparent;
+}
+
+.listContentDetailsHolder {
+	width: 100%;
+	float: left;
+	overflow: visible;
+}
+
+.listOptionDetailsHolder {
+	display: none;
+	height: 38px;
+	width: 100%;
+	-webkit-transition: 0.5s 0.10s;
+	-moz-transition:  0.5s 0.10s;
+    -o-transition: 0.5s 0.10s;
+    -ms-transition:  0.5s 0.10s;
+    transition:  0.5s 0.10s;	
+}
+
+.listArrowHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	height: 10px;
+	position: relative;
+}
+
+.listArrowUp {
+	float: left;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #FFF;
+	margin: 0 65px;	
+	position: absolute;
+	top:0px;
+}
+
+.listOptionsContent {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.breadCrumbsHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.breadCrumbsIcon {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	margin: 0 15px;
+}
+
+.breadCrumbs {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	color: #999;
+	font-size: 11px;
+}
+
+.listOptionsContent {
+	background-color: #FFF;
+	padding: 7px 0 5px;
+}
+
+.optionsHolder {
+	float: right;
+	margin: 0 45px 0 0px;
+}
+
+.listOptionList {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+}
+
+.listOptionList > li {
+	color: #808080;
+	padding: 0 30px 0 0px;
+}
+
+.listFooterHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position:relative; 
+	border-top: solid 2px #FFF;
+}
+
+.listFooterDetails {
+	position: absolute;
+	top:0px;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+}
+
+.listViewsHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.listViewsHolder > li {
+	display: inline-block;
+	width: auto;
+	float: left;
+	color: #000;
+	font-size: 20px;
+	padding: 9px 0px 9px 15px;
+	cursor: pointer;
+}
+
+.listViewsHolder > li.activeView {
+	color: #CCC;
+}
+
+.numberofRowsLabel {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	margin: 0 0px 0 290px;
+	padding: 12px 0;
+}
+
+.numberofRowsLabel span {
+	color: #000;
+	font-weight: 900;
+	font-size: 14px;
+}
+
+.scrollBarHolder {
+	width: 5px;
+	position: absolute;
+	right: 0px;
+	height: 577px;
+	background-color: rgb(255,255,255);
+	padding: 0 2px;	
+	opacity:0.7;
+	filter:Alpha(opacity=70);
+	z-index: 3;	
+	top:0px;
+}
+
+.scroll {
+	width: 100%;
+	height: 100px;
+	background-color: #CCC;
+	overflow: hidden;
+	cursor: pointer;
+}

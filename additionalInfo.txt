@@ -1,0 +1,30 @@
+ICON NAMES (class) :
+
+searchIcon
+lockIcon
+homeIcon
+filesIcon
+foldersIcon
+indexIcon
+tagsIcon
+trashIcon
+settingsIcon
+filesLabelIcon
+questionIcon
+breadcrumbsIcons
+.infoIcon,
+.downloadIcon,
+.signoutIcon,
+.copyIcon,
+.timeIcon,
+.fontIcon,
+.tagIcon,
+.lockIcon,
+.trashIcon,
+.optionIcons
+.uncheckIcon,
+.checkIcon
+
+INPUT NAMES (class) :
+
+searchInput

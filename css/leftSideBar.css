@@ -1,0 +1,128 @@
+.leftSideBar {
+	width: 185px;
+	float: left;
+	overflow: hidden;
+	position: fixed;
+	top:40px;
+	height: 100%;
+	z-index: 2;
+}
+
+.leftSideBarContentsHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+.backToDashBoardHolder {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.leftSideBarContents {
+	width: 185px;
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	top:0px;
+	height: 100%;
+}
+
+.leftSideMenus {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+.leftSideMenus > li {
+	width: 180px;
+	display: inline-block;
+	font-size: 16px;
+	position: relative;
+	height: 40px;
+	border-left: solid 5px transparent;
+	-webkit-transition: 0.5s 0.10s;
+	-moz-transition:  0.5s 0.10s;
+    -o-transition: 0.5s 0.10s;
+    -ms-transition:  0.5s 0.10s;
+    transition:  0.5s 0.10s;	
+}
+
+.leftSideMenus > li:hover{
+	border-left: solid 5px transparent;
+}
+
+.leftSideMenus > li.activeMenu {
+	border-left: solid 5px #7ac943;
+}
+
+
+.leftSideMenus > li:first-child:hover {
+	border-left: solid 5px transparent;
+}
+
+.listMenu {
+	width: 165px;
+	float: left;
+	overflow: hidden;
+	padding: 9px 0;
+	position: absolute;
+	top:0px;
+	color: #FFF;
+	opacity:0.50;
+	filter:Alpha(opacity=50);
+	-webkit-transition: 0.5s 0.10s;
+	-moz-transition:  0.5s 0.10s;
+    -o-transition: 0.5s 0.10s;
+    -ms-transition:  0.5s 0.10s;
+    transition:  0.5s 0.10s;		
+}
+
+.listMenu:hover {
+	opacity:1;
+	filter:Alpha(opacity=100);	
+}
+
+
+.leftSideMenus > li.activeMenu .activeListHolder {
+	display: block;
+}
+
+.leftSideMenus > li.activeMenu .listMenu {
+	opacity:1;
+	filter:Alpha(opacity=100);
+}
+
+.activeListHolder {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	padding: 10px 0;
+	display: none;
+}
+
+.leftSideMenus > li:hover .activeListHolder {
+	display: block;
+}
+
+.activeList {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;	
+	border-left: 10px solid #C7B299;	
+	opacity:0.6;
+	filter:Alpha(opacity=60);	
+}
+
+.settingsHolder {
+	position: absolute!important;
+	bottom: 0px;
+	left:0px;
+	padding: 0 0 40px 0;
+}
